@@ -1,0 +1,10 @@
+{
+  "project": "How sure are you? - Group C - Has summer actually got hotter?",
+  "members": [
+    {"name": "[NAME 1]", "role": "collector, question-two presenter"},
+    {"name": "[NAME 2]", "role": "contract and explorer, introduction presenter"},
+    {"name": "[NAME 3]", "role": "analyst, question-one presenter"}
+  ],
+  "user_agent": "[USER-AGENT - REPLACE WITH REAL CONTACT]",
+  "prediction": "[PREDICTION - WRITE AND SEAL BEFORE OPENING DATA]"
+}

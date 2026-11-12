@@ -1,0 +1,25 @@
+# Six-minute presentation — Group C, "Has summer actually got hotter?"
+
+**Numbers:** every `[PENDING...]` token must be replaced from `outputs/talk_numbers.md` **after** running the notebook. Show estimates together with their year-block intervals; do not fill from intuition. Exact raw counts and denominators are labelled as **observed** and can be shown as `[count,count]` for a zero-width cache-only range. If a published Wikipedia normal lacks an uncertainty range, label that limitation rather than inventing one.
+
+| Time | Presenter | Slide | On-screen content and speaking cue |
+|---|---|---|---|
+| **0:00–0:45** | Person 2, contract/explorer | **1. The question and pre-data prediction** | "Did the summer chance of a Tirana day **strictly above 35°C** change?" Summer = June–August. Compare 1961–1990 with 1991–2020. Display **[PREDICTION — exact sealed statement]** and SHA-256 from the seal; emphasize it was recorded before collection. |
+| **0:45–2:30** | Person 2, contract/explorer | **2. What data do we actually have?** | **Open-Meteo archive ERA5** (latitude 41.3275, longitude 19.8187, explicit model ERA5), plus the **cached Wikipedia Tirana** climate box for sanity checking only. Illustrate a **month-level** join, not a daily join. Show `temperature_2m_max` °C, time as local calendar day, precipitation mm, 30-year periods, **[MISSING DATE/TEMP COUNTS + exact cache-only ranges]**. ERA5 is a grid reconstruction (~25 km), not a station; show `data_contract.csv` preview and verified Wikipedia normal years **[PENDING]**. |
+| **2:30–4:15** | Person 3, analyst | **3. Hot-day rate and chance world** | Left: `outputs/period_rates.png`: 1961–1990 **[hot count / valid day count]**, base rate **[rate, 95% interval]**; 1991–2020 **[hot count / valid day count]**, base rate **[rate, interval]**. Difference late−early **[difference in percentage points, interval]**. Right: `outputs/permutation_histogram.png`: 10,000 shuffled **year-label** worlds; vertical line at observed difference and central 95% shuffled range. Say whether the observed line is unusual in this null reference; if sparse events, flag it. |
+| **4:15–5:30** | Person 1, collector | **4. The center versus the tail** | Show `outputs/mean_vs_tail_change.png`: mean summer daily maximum shift **[°C, bootstrap range]** versus 95th-percentile shift **[°C, range]**. Line at zero. Say "supports a change" only for the metric whose 95% range excludes zero. Note both resample 30 **years**, not 2,760 independent days. |
+| **5:30–6:00** | All three | **5. What are we sure about? Prediction reveal and limits** | Person 2 reads the prediction again. Person 3: **[SUPPORTED / CANNOT TELL]** based on intervals, not wishful interpretation. Person 1: two limits (ERA5 grid vs station, missing data/rare hot days; Wikipedia normals years if unverified). End: "We reported what the ranges support — including uncertainty." |
+
+**Timing note:** the exact slot breakdown gives Person 2 about **2:30**, Person 3 **1:45**, Person 1 **1:15**, plus a jointly delivered **0:30**. It is not an equal 2:00 each. If strict equal airtime is required, rebalance after a timed rehearsal; the planned topics and figures remain unchanged.
+
+## Speaker lines with data placeholders
+
+**Person 2:** “Our question is not whether a particular summer *felt* hot; it is whether the observed share of June–August days above 35°C differs across these two periods. Before we collected anything, our sealed statement was: **[SEALED PREDICTION]**. We use an ERA5 grid reconstruction at Tirana's coordinates, not airport station readings. The raw files and contract tell us which daily values we actually have.”
+
+**Person 3:** “In the earlier period we saw **[EARLY HOT]** hot days out of **[EARLY VALID]** measured summer days: **[EARLY RATE + INTERVAL]**. In the later period we saw **[LATE HOT]** out of **[LATE VALID]**: **[LATE RATE + INTERVAL]**. The difference is **[DIFFERENCE + INTERVAL]**. The 10,000 shuffles in this histogram swap *entire years* between period labels, giving a chance-only reference. **[CONCLUSION FROM RANGES]**.”
+
+**Person 1:** “We also tested whether the center or the very hot end changed more. Here is the mean change **[MEAN SHIFT + INTERVAL]** and the 95th-percentile change **[TAIL SHIFT + INTERVAL]**. Because **[WHICH INTERVALS EXCLUDE ZERO]**, we can say **[CAREFUL CONCLUSION]**, but this remains a gridded ERA5 estimate.”
+
+**All:** “The ranges **[DO / DO NOT]** support our sealed prediction. Our key limits are sparse hot days, the grid-versus-station distinction, within- and between-year dependence, and missing temperatures. **[WE CAN / CANNOT TELL]** is the appropriate answer.”
+
+**Attribution footer on slides:** Open-Meteo Historical Weather API, ERA5 reanalysis (Copernicus/ECMWF), data under CC BY 4.0 as specified in the project brief; Wikipedia contributors, *Tirana*, climate table and cited underlying provider, page cached **[ACCESS DATE]**. Check the current applicable source terms before public release.

@@ -1,0 +1,10 @@
+{
+  "confirmed": false,
+  "metric": "mean_daily_max_c",
+  "start_year": null,
+  "end_year": null,
+  "evidence_quote": "[Copy the exact climate table caption or cited note proving the years of the mean daily maximum row]",
+  "reviewer": "[NAME 2]",
+  "review_date": null,
+  "notes": "[If source periods differ between Wikipedia rows, confirm only the mean_daily_max_c row.]"
+}
