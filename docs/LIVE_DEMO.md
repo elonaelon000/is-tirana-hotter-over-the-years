@@ -29,14 +29,14 @@ Replace spoken numeric placeholders only after completed, verified outputs exist
 
 ## GitHub Pages: static `site/` folder
 
-1. Push the team-reviewed project to `main` (do not fabricate teammates' commits).
+1. The initial reviewed project source is committed to `main` (do not fabricate teammates' future commits).
 2. Open repository **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. In **Actions**, select **Publish verified climate research website** and choose **Run workflow** (manual activation; no unreviewed auto publishing).
+3. In **Actions**, select **Publish Group C website** and choose **Run workflow**. The first push-triggered deployment failed because GitHub Pages was not yet enabled; rerun after switching on Pages.
 4. Wait for a successful deployment; use the **Visit site** link in GitHub Pages settings. Copy the **actual** confirmed URL to README, not an imagined link.
 5. Test the homepage and every internal anchor. Confirm `styles.css`, `data-view.js`, `motion.js`, `results.js`, and `img/dajti-concept.webp` load without 404 errors, and that the mobile menu and download panel work.
 6. If any values appear, compare them to verified `processed/period_rates.csv`, `processed/rate_difference.csv`, `processed/permutation_summary.csv`, and `processed/question_two_changes.csv`.
 
-The workflow in `.github/workflows/pages.yml` deploys the `site/` directory as a static artifact **only when manually dispatched**, so you decide when to make the live demo public.
+The workflow in `.github/workflows/pages.yml` publishes `site/` on relevant `main` changes or when manually dispatched, **but requires Pages enabled under Settings first**. Publishing the website scaffold does not certify any climate findings; all results remain pending until verified source data is available.
 
 ## Scientific screenshots
 

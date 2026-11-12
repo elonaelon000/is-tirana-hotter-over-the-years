@@ -1,6 +1,6 @@
 # Group C website — Tirana and Mount Dajti review edition
 
-This is the **local, unpublished website** for the “How sure are you?” project. Open `index.html` in a modern browser. The site has no build step, API key or runtime weather-network request; fonts fall back to installed system fonts if the Google Fonts service is inaccessible.
+This is the **website source committed to GitHub** for the “How sure are you?” project; its initial public Pages deployment is **not yet enabled**. Open `index.html` in a modern browser. The site has no build step, API key or runtime weather-network request; fonts fall back to installed system fonts if the Google Fonts service is inaccessible.
 
 ## Files
 
@@ -32,4 +32,4 @@ A user-friendly explanation is linked inside the site as **“FULL METHOD NOTES�
 
 ## Publishing
 
-**No GitHub changes or public deployment have been made for this review edition.** Do not merge, push or trigger the optional manual `.github/workflows/pages.yml` until the team reviews the files, contributions are credited accurately, and the final site is verified against real results. See `docs/LIVE_DEMO.md` and `docs/TEAM_WORKFLOW.md`.
+**Repository source is public, but a live Pages deployment has not yet succeeded.** Enable Pages via repository Settings → Pages → GitHub Actions, then rerun the `Publish Group C website` workflow. Raw climate data, completed analysis and teammate contributions are still pending; the site must not display unverified findings. See `docs/LIVE_DEMO.md` and `docs/TEAM_WORKFLOW.md`.

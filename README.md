@@ -121,7 +121,7 @@ not a publicly deployed URL.**
 
 - [Scientific methods and every figure](docs/SCIENCE_AND_FIGURES.md) — explains all 3 probability methods, derived columns, data provenance, chart meanings and honest caveats.
 - [Real contributor workflow](docs/TEAM_WORKFLOW.md) — three independent roles, branch names, PR evidence and no fabricated commit attribution.
-- [Live demo and Pages instructions](docs/LIVE_DEMO.md) — how to prepare a truthful 2-minute demonstration; manual deploy, no invented URL.
+- [Live demo and Pages instructions](docs/LIVE_DEMO.md) — how to prepare a truthful 2-minute demonstration; Pages setup and deployment, no invented URL.
 - [Figure QA checklist](docs/FIGURE_CHECKLIST.md) — each chart must match notebook CSVs, zero-crossing interpretation and counts.
 - [Project status log](docs/PROGRESS_LOG.md) — what is actually prepared versus blocked by uncollected data.
 - [Existing known gaps](KNOWN_GAPS.md) and [offline checklist](OFFLINE_CHECKLIST.md).
@@ -137,7 +137,7 @@ not a publicly deployed URL.**
 
 ### Publishing the static website
 
-The existing HTML, CSS and JavaScript need no framework or build step. `.github/workflows/pages.yml` is **manually triggered** to publish `site/` through GitHub Pages once the team approves its content. Select **Settings → Pages → GitHub Actions**, then **Actions → Publish verified climate research website → Run workflow**, and confirm the actual URL before putting a live-demo link here. See [the live-demo guide](docs/LIVE_DEMO.md).
+The HTML, CSS and JavaScript require no build step. **Project source has been committed to `main`**, but a working public website URL has not yet been verified: the initial Pages deployment failed because Pages was not enabled. To publish, open **Settings → Pages → Build and deployment → Source: GitHub Actions**, then **Actions → Publish Group C website → Run workflow** (or rerun the failed job). Confirm the actual deployed URL before adding a live-demo link. The website still displays **results pending** until real data is verified. See [the live-demo guide](docs/LIVE_DEMO.md).
 
 ### Final README sections to fill after real results exist
 

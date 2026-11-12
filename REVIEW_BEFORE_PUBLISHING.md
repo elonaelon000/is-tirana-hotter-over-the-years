@@ -1,6 +1,6 @@
-# READ FIRST — Local review package, **NOT** a GitHub upload
+# Review package and current publishing status
 
-Prepared for inspection, not published. No commit, push, PR, issue, GitHub Pages deployment or other GitHub mutation was performed in preparing this review edition.
+Originally prepared for inspection only; the user later explicitly requested publication to GitHub. The project source and mountain-view website have now been committed to `main`. **GitHub Pages is not yet enabled**, so there is no verified public live-site URL; raw climate data and final conclusions are still pending.
 
 ## Preview
 
@@ -28,7 +28,7 @@ Prepared for inspection, not published. No commit, push, PR, issue, GitHub Pages
 - [ ] Independent teammate runs notebook top to bottom **offline** and checks every figure.
 - [ ] Fill README with actual measured values and ranges from verified outputs; don't claim a warming verdict prematurely.
 - [ ] Review teammates' genuine separate PRs under their own GitHub accounts.
-- [ ] Agree on final README content and enable the manually triggered GitHub Pages deployment only after approval.
+- [ ] Enable GitHub Pages from Settings → Pages → GitHub Actions and rerun the `Publish Group C website` workflow. Verify the live link.
 
 ## Existing GitHub state
 
